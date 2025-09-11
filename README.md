@@ -7,9 +7,9 @@ I tested Internet with:
 ping 1.1.1.1
 ping 8.8.8.8
 
-- When Internet is ON → the command replies, meaning connection works.
+- When Internet is ON - the command replies, meaning connection works.
 
-- When I disable the network → ping shows “no reply / timeout”.
+- When I disable the network - ping shows “no reply / timeout”.
 
 - This proves packets don’t go out.
 
@@ -41,7 +41,7 @@ sudo systemctl start apache2
 
 - Scanned again with nmap.
 
-- This time port 80/tcp was open → Apache web server running.
+- This time port 80/tcp was open - Apache web server running.
 
 - Difference: Before no open ports, after running Apache the scan shows the service.
 
