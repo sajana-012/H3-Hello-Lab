@@ -49,15 +49,15 @@ sudo systemctl start apache2
 
 d) Bandit game (levels 0–4)
 
-- Level 0 → 1: Logged in with SSH. Password stored in a file.
+- Level 0 - 1: Logged in with SSH. Password stored in a file.
 
-- Level 1 → 2: File named -, needed cat ./- to open.
+- Level 1 - 2: File named -, needed cat ./- to open.
 
-- Level 2 → 3: Hidden file, used ls -a.
+- Level 2 - 3: Hidden file, used ls -a.
 
-- Level 3 → 4: File with spaces, needed quotes cat "spaces in this filename".
+- Level 3 - 4: File with spaces, needed quotes cat "spaces in this filename".
 
-- Level 4 → 5: In “inhere” folder, found correct file by checking which one was human-readable.
+- Level 4 - 5: In “inhere” folder, found correct file by checking which one was human-readable.
 
 Conclusion: These levels teach you how to deal with tricky filenames, hidden files, and how to find information in Linux.
 
