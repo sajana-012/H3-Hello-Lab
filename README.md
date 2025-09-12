@@ -61,18 +61,6 @@ d) Bandit game (levels 0–4)
 
 Conclusion: These levels teach you how to deal with tricky filenames, hidden files, and how to find information in Linux.
 
-e) Bonus: Underthewire Century
-
-Connected with SSH:
-
-ssh century1@century.underthewire.tech
-
-- Used PowerShell commands like Get-Content to read files and Select-String to search text.
-
-- Similar idea to Bandit, but for Windows instead of Linux.
-
-- Conclusion: Nice way to practice PowerShell basics, like Bandit does for Linux.
-
 ## Sources
 
 Karvinen, Tero (2021). Install Debian on VirtualBox – Updated 2024
