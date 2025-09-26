@@ -5,7 +5,6 @@ a) Can’t fish (disable network test)
 I tested Internet with:
 
 ping 1.1.1.1
-ping 8.8.8.8
 
 - When Internet is ON - the command replies, meaning connection works.
 
@@ -16,6 +15,9 @@ ping 8.8.8.8
 - Pressed Ctrl + C to stop the ping.
 
 - Conclusion: Turning off the network makes the lab safe from accidentally scanning outside.
+<img width="555" height="377" alt="Screenshot 2025-09-26 140305" src="https://github.com/user-attachments/assets/8c5e56b0-7c71-42f5-b151-b090f3d3f598" />
+
+  
 
 b) Local only (port scan localhost)
 
