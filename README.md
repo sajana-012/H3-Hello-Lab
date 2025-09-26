@@ -6,62 +6,21 @@ I tested Internet with:
 
 ping 1.1.1.1
 
-- When Internet is ON - the command replies, meaning connection works.
-
-- When I disable the network - ping shows “no reply / timeout”.
-
-- This proves packets don’t go out.
-
-- Pressed Ctrl + C to stop the ping.
-
-- Conclusion: Turning off the network makes the lab safe from accidentally scanning outside.
 <img width="555" height="377" alt="Screenshot 2025-09-26 140305" src="https://github.com/user-attachments/assets/8c5e56b0-7c71-42f5-b151-b090f3d3f598" />
 
   
-
 b) Local only (port scan localhost)
 
-Installed tool with:
+I disconnect the internet and analyze the result: After internet is disconnected the result was error
 
-sudo apt-get install nmap
-
-
-Scanned my own machine:
-
-sudo nmap -A localhost
-
-- Without daemons, Debian had almost no open ports (safe by default).
-
-- Conclusion: Fresh Linux system does not expose services to the network.
+<img width="558" height="372" alt="Screenshot 2025-09-26 140321" src="https://github.com/user-attachments/assets/48cd1974-c1f5-4b3a-9a3c-8552257f7ef6" />
 
 c) Daemon scan (with Apache running)
 
-Installed Apache:
+Installed Apache or SSH: I try to install ssh and result was like this
 
-sudo apt-get install apache2
-sudo systemctl start apache2
+<img width="559" height="275" alt="Screenshot 2025-09-26 140344" src="https://github.com/user-attachments/assets/56cafca6-a94e-44cc-af40-95c8d22f45e7" />
 
-- Scanned again with nmap.
-
-- This time port 80/tcp was open - Apache web server running.
-
-- Difference: Before no open ports, after running Apache the scan shows the service.
-
-- Conclusion: Starting a server program (daemon) opens a door to the system.
-
-d) Bandit game (levels 0–4)
-
-- Level 0 - 1: Logged in with SSH. Password stored in a file.
-
-- Level 1 - 2: File named -, needed cat ./- to open.
-
-- Level 2 - 3: Hidden file, used ls -a.
-
-- Level 3 - 4: File with spaces, needed quotes cat "spaces in this filename".
-
-- Level 4 - 5: In “inhere” folder, found correct file by checking which one was human-readable.
-
-Conclusion: These levels teach you how to deal with tricky filenames, hidden files, and how to find information in Linux.
 
 ## Sources
 
